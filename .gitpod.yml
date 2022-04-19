@@ -4,6 +4,7 @@ tasks:
   - before: |
       if [ ! -d ./vendor/bundle/ruby ]; then
         cp -r /base-rails/gems/ruby vendor/bundle
+        cp -r /base-rails/node_modules ./node_modules
         bundle config set --local path 'vendor/bundle'
         rails db:create db:migrate
         rails db:seed
