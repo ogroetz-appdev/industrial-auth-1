@@ -4,6 +4,7 @@ unwanted_extensions = [
   "k--kato.intellij-idea-keybindings",
   "kaiwood.endwise",
   "castwide.solargraph",
+  "jnbt.vscode-rufo",
   "mbessey.vscode-rufo",
 ]
 
