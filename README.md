@@ -31,7 +31,7 @@ Try to use a good Git workflow, including branching, opening Pull Requests, and 
 
 ### Tasks
 
-To add some security to your application until you think it matches the target. A non-exhaustive list of things to do:
+Secure your application until you think it matches the target. A non-exhaustive list of things to do:
 
  - If I click delete on a photo that's not mine, I should be redirected back to the page I was on before. *(Once you've locked that down properly, you should hide the link so as not to be rude.)*
  - If I click edit on a photo that's not mine, I should be redirected back to the page I was on before. *(Once you've locked that down properly, you should hide the link so as not to be rude.)*
