@@ -3,14 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
 
-gem 'draft_generators', github: 'firstdraft/draft_generators', branch: 'winter-2020'
-gem 'active_link_to'
-gem "strip_attributes"
-gem "validate_url"
-gem 'devise'
-gem 'faker'
-gem 'pundit'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
 # Use postgresql as the database for Active Record
@@ -63,22 +55,31 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# appdev gems
-# ==================
+# appdev Gems
+# ===========
+gem 'active_link_to'
+gem 'devise'
+gem 'faker'
+gem 'pundit'
+gem "strip_attributes"
+gem "validate_url"
+
 group :development do
   gem 'annotate'
   gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'bullet'
+  gem 'draft_generators', github: 'firstdraft/draft_generators'
+  gem 'htmlbeautifier'
   gem 'pry-rails'
   gem 'rack-canonical-host'
-  gem 'rails_db'
   gem 'rails-erd'
   gem 'rollbar'
-  gem "standard", require: false
-  gem "rubocop-rails", require: false
-  gem "rubocop-rspec", require: false
+  gem 'rufo'
+  gem 'standard', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
   gem 'skylight'
   gem 'web_git', github: 'firstdraft/web_git'
 end
