@@ -6,7 +6,7 @@ Our industrial-grade application is shaping up, but it's sorely lacking in one a
 
 Right now, if you spin up this application, everyone can see everything and do everything (especially if they can guess URLs, which are easy to guess since we're following RESTful conventions and using sequential integer IDs).
 
-We should make the application more secure. [Here is our first target.](https://industrial-auth-1.herokuapp.com/)
+We should make the application more secure. [Here is our first target.](https://industrial-auth-1.matchthetarget.com/)
 
 ### Resources
 
@@ -42,4 +42,4 @@ To add some security to your application until you think it matches the target. 
 
 Is the application secure? Put on your hacker hat: can you think of any other attacks? If so, plug the holes!
 
-[The target](https://industrial-auth-1.herokuapp.com/) is also not fully hardened, so you can practice by hacking it too.
+[The target](https://industrial-auth-1.matchthetarget.com/) is also not fully hardened, so you can practice by hacking it too.
