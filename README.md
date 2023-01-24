@@ -2,9 +2,11 @@
 
 ### Target
 
-Our industrial-grade application is shaping up, but it's sorely lacking in one area: security. Right now, everyone can see everything and do everything (especially if they can guess URLs, which are easy to guess since we're following RESTful conventions and using sequential integer IDs).
+Our industrial-grade application is shaping up, but it's sorely lacking in one area: security.
 
-[Here is our more secure target.](https://industrial-auth-1.herokuapp.com/)
+Right now, if you spin up this application, everyone can see everything and do everything (especially if they can guess URLs, which are easy to guess since we're following RESTful conventions and using sequential integer IDs).
+
+We should make the application more secure. [Here is our first target.](https://industrial-auth-1.herokuapp.com/)
 
 ### Resources
 
@@ -40,6 +42,4 @@ To add some security to your application until you think it matches the target. 
 
 Is the application secure? Put on your hacker hat: can you think of any other attacks? If so, plug the holes!
 
-We'll spend the first portion of class next week in small groups [pen testing](https://searchsecurity.techtarget.com/definition/penetration-testing) — i.e., trying to hack — each other's applications. ([The target](https://industrial-auth-1.herokuapp.com/) is not fully hardened, so you can practice by hacking it.)
-
-For this assignment, submit the URL of whichever PR contains your final commit. That's the one your groupmates will spin up a Gitpod workspace on and code review/attempt to hack. (It can be the same URL that you submitted for the in-class assignment.)
+[The target](https://industrial-auth-1.herokuapp.com/) is also not fully hardened, so you can practice by hacking it too.
