@@ -1,14 +1,10 @@
-image: jelaniwoods/appdev2022-industrial_auth-wip
+image: jelaniwoods/appdev2023-industrial-auth-wip
 
 tasks:
   - before: |
-      if [ ! -d ./vendor/bundle/ruby ]; then
-        cp -r /base-rails/gems/ruby vendor/bundle
-        cp -r /base-rails/node_modules ./node_modules
-        bundle config set --local path 'vendor/bundle'
-        rails db:create db:migrate
-        rails db:seed
-      fi
+      source $(rvm 3.0.3 do rvm env --path)
+      bin/setup
+      .vscode/manage_extensions
 ports:
   - port: 3000
     onOpen: open-preview
@@ -20,5 +16,4 @@ ports:
 vscode:
   extensions:
     - vortizhe.simple-ruby-erb
-    - mbessey.vscode-rufo
     - aliariff.vscode-erb-beautify
