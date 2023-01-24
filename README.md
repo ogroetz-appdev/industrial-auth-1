@@ -4,7 +4,12 @@
 
 Our industrial-grade application is shaping up, but it's sorely lacking in one area: security.
 
-Right now, if you spin up this application, everyone can see everything and do everything (especially if they can guess URLs, which are easy to guess since we're following RESTful conventions and using sequential integer IDs).
+Right now, if you spin up this application, everyone can see everything and do everything (especially if they can guess URLs, which are easy to guess since we're following RESTful conventions and using sequential integer IDs). Try it out:
+
+- `bin/server`
+- `rails sample_data`
+- Sign in with `alice@example.com` / `password`.
+- Poke around. Make a list of security issues that you discover.
 
 We should make the application more secure. [Here is our first target.](https://industrial-auth-1.matchthetarget.com/)
 
